@@ -1,0 +1,31 @@
+<h2 class="text-center">Playlists</h2>
+
+<div class="playlist-table">
+  <table class="table table-striped">
+    <thead class="text-center">
+      <th style="width: 25%;">Playlist Name</th>
+      <th style="width: 45%;">Songs</th>
+      <th style="width: 30%;">Action</th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let playlist of playlists" class="width:100%">
+          <td class="text-center" style="width: 25%;">{{playlist.playlistName}}</td>
+          <td style="width: 45%;" *ngIf="playlist.song.length > 0">
+            <div class="row" *ngFor="let s of playlist.song">
+              <div style="width:80%">
+                <span>{{s.songTitle}}</span>
+                <span> - </span>
+                <span>{{s.singer}}</span>
+              </div>
+              <div style="width:20%">
+                <button style="margin-bottom: 10px;" (click)="deleteSongById(s.songId, playlist.id)" class="btn btn-info box--end">Delete</button>
+              </div>
+            </div>  
+          <td class="text-center;" style="width: 30%;"> 
+            <button (click)="updatePlaylist(playlist.id)" class="btn btn-info">Update Playlist</button>
+            <button (click)="deletePlaylist(playlist.id)" class="btn btn-danger" style="margin-left: 10px;">Delete Playlist</button>
+          </td>
+    </tbody>
+  </table>
+</div>

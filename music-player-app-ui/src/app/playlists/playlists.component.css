@@ -1,0 +1,14 @@
+.playlist-table {
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;   
+}
+
+.table td, .table th {
+    border-top: none;
+}
+
+.box--end {
+    margin-right: auto;
+    margin-left: 0;
+}

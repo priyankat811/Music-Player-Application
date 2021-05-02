@@ -1,0 +1,18 @@
+.songs {
+    font-weight: 600;
+    width: 92%;
+}
+
+.add-btn {
+    width: 8%;
+}
+
+.songs-title {
+    width: 100%;
+}
+
+.songs-section {
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
