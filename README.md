@@ -5,7 +5,7 @@ Music Player Application:
 Steps to run Project:
 1. To set up the backend code download the music-player-app folder.(or you could clone the entire repo)
 2. Import the project as maven project in the eclipse(spring tool suite)
-3. Add the external jars provided in the jar_files folder
+3. Add the external jars provided in the jar_files folder(We should add the dependencies in POM.xml and then build the project. Maven will download it for you. Adding external jars is not really recommended. Since, I was getting some issues just to save the time I have added these external Jars. You could add these dependencies in your POM.xml and maven build the project instead of adding these jars externally.)
 4. Create a database in Mysql workbench and give the same name in the datasource url present in the application.properties file
 5. Run the project
 6. You can check the working of the APIs in postman also.
